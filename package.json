@@ -1,0 +1,21 @@
+{
+  "name": "circular-list",
+  "version": "0.0.0",
+  "description": "A circular linked list",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/circular-list.git"
+  },
+  "keywords": [
+    "circular",
+    "linked",
+    "list",
+    "data",
+    "structure"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
