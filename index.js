@@ -21,7 +21,7 @@ LinkedList.prototype.append = function(node) {
     node.prev = this.last
     node.next = this.first
     this.first.prev = node
-    this.last.prev = node
+    this.last.next = node
     this.last = node
   }
 
