@@ -55,7 +55,7 @@ LinkedList.prototype.remove = function(node) {
   this.length -= 1
 }
 
-LinkedList.prototype.each = function(node) {
+LinkedList.prototype.each = function(cb) {
   var p = this.first
   var n = this.length
 
