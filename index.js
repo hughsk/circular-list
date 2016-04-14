@@ -71,5 +71,6 @@ LinkedList.prototype.runUntil = function(cb) {
 
   do {
     again = cb(p.data)
+    p = p.next
   } while(again)
 }
