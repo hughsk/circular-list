@@ -64,3 +64,12 @@ LinkedList.prototype.each = function(cb) {
     p = p.next
   }
 }
+
+LinkedList.prototype.runUntil = function(cb) {
+  var p = this.first
+  var again = false
+
+  do {
+    again = cb(p.data)
+  } while(again)
+}
