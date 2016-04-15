@@ -11,6 +11,7 @@ function LinkedList() {
   this.length = 0
   this.first = null
   this.last = null
+  this.current = null
 }
 
 LinkedList.prototype.append = function(node) {
