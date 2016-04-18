@@ -76,12 +76,16 @@ LinkedList.prototype.runUntil = function(cb) {
   } while(again)
 }
 
-LinkedList.prototype.walk = function(cb) {
-  var p = this.current
+LinkedList.prototype.walk = function() {
+  var p,
+      d
+
+  p = this.current
 
   if(p === null) {
-    p = this.head
+    p = this.first
   }
-  cb(p.data)
+  d = p.data
   this.current = p.next
+  return d
 }
