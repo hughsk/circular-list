@@ -11,6 +11,7 @@ function LinkedList() {
   this.length = 0
   this.first = null
   this.last = null
+  this.current = null
 }
 
 LinkedList.prototype.append = function(node) {
@@ -63,4 +64,28 @@ LinkedList.prototype.each = function(cb) {
     cb(p.data)
     p = p.next
   }
+}
+
+LinkedList.prototype.runUntil = function(cb) {
+  var p = this.first
+  var again = false
+
+  do {
+    again = cb(p.data)
+    p = p.next
+  } while(again)
+}
+
+LinkedList.prototype.walk = function() {
+  var p,
+      d
+
+  p = this.current
+
+  if(p === null) {
+    p = this.first
+  }
+  d = p.data
+  this.current = p.next
+  return d
 }
